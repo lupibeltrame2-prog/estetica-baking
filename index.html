@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baking Beauty - Estética Facial y Corporal | Gabinete Estético</title>
+    <meta name="description" content="Tratamientos faciales y corporales de vanguardia, aparatología avanzada y atención personalizada. Coordiná tu turno por WhatsApp.">
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="site-header" id="header">
+        <div class="container header-container">
+            <a href="#hero" class="brand-logo">
+                <img src="assets/images/logo.jpg" alt="Baking Beauty Logo" class="logo-img">
+                <div class="brand-text">
+                    <span class="brand-name">Baking Beauty</span>
+                    <span class="brand-tagline">Estética Facial y Corporal</span>
+                </div>
+            </a>
+
+            <nav class="main-nav" id="main-nav">
+                <a href="#hero" class="nav-link active">Inicio</a>
+                <a href="#filosofia" class="nav-link">Nosotros</a>
+                <a href="#servicios" class="nav-link">Tratamientos</a>
+                <a href="#productos" class="nav-link">Productos & Marcas</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="https://wa.me/qr/JULPQ2VESAFND1" 
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   class="btn btn-primary btn-sm btn-whatsapp">
+                    <svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                        <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.84 9.84 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.19 8.19 0 0 1-5.83 2.42c-1.46 0-2.9-.38-4.16-1.12l-.3-.18-3.1 1.2.82-3.02-.19-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.45c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.65.81-.8.98-.15.17-.3.19-.55.07-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.49-1.4-1.74-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.3z"/>
+                    </svg>
+                    <span>Pedir Turno</span>
+                </a>
+                <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Abrir menú">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge">✨ Estética Facial & Corporal Avanzada</span>
+                    <h1 class="hero-title">Resaltá tu belleza natural con tratamientos diseñados para vos.</h1>
+                    <p class="hero-subtitle">En un espacio pensado para tu bienestar, combinamos aparatología de vanguardia y atención personalizada para que tu piel y tu cuerpo se sientan en su mejor versión.</p>
+                    
+                    <div class="hero-cta-group">
+                        <a href="https://wa.me/qr/JULPQ2VESAFND1" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="btn btn-primary btn-lg btn-glow">
+                            <svg class="icon" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.84 9.84 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.19 8.19 0 0 1-5.83 2.42c-1.46 0-2.9-.38-4.16-1.12l-.3-.18-3.1 1.2.82-3.02-.19-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.45c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.65.81-.8.98-.15.17-.3.19-.55.07-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.49-1.4-1.74-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.3z"/>
+                            </svg>
+                            <span>Agendar consulta por WhatsApp</span>
+                        </a>
+                        <a href="#servicios" class="btn btn-outline btn-lg">Explorar Tratamientos</a>
+                    </div>
+                    
+                    <p class="hero-microcopy">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                        <em>Sin compromiso. Te asesoramos sobre el tratamiento ideal para tu piel.</em>
+                    </p>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-card-glow"></div>
+                    <div class="hero-card">
+                        <img src="assets/images/hero-model.jpg" alt="Piel Radiante Baking Beauty" class="hero-card-img">
+                        <div class="hero-card-footer">
+                            <div class="hero-stat">
+                                <span class="stat-num">100%</span>
+                                <span class="stat-label">Personalizado</span>
+                            </div>
+                            <div class="hero-stat-divider"></div>
+                            <div class="hero-stat">
+                                <span class="stat-num">Aparatología</span>
+                                <span class="stat-label">De Vanguardia</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Propuesta de Valor y Filosofía -->
+        <section class="section philosophy-section" id="filosofia">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Sobre el Gabinete</span>
+                    <h2 class="section-title">Cuidado consciente, resultados reales.</h2>
+                    <p class="section-description">
+                        Creemos que la estética no busca cambiar quién sos, sino potenciar tu confianza. Cada sesión se adapta a tus necesidades específicas, priorizando la salud de tu piel y un momento de desconexión total.
+                    </p>
+                </div>
+
+                <div class="pillars-grid">
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="pillar-title">Evaluación personalizada</h3>
+                        <p class="pillar-desc">Diagnóstico previo riguroso para diseñar tu protocolo exclusivo a medida según tu tipo de piel y objetivos.</p>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                        </div>
+                        <h3 class="pillar-title">Tecnología y seguridad</h3>
+                        <p class="pillar-desc">Protocolos no invasivos de última generación combinados con principios activos de grado cosmecéutico profesional.</p>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="pillar-title">Acompañamiento continuo</h3>
+                        <p class="pillar-desc">Seguimiento constante de tu evolución antes, durante y después de cada sesión para garantizar la mejor experiencia.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Catálogo de Servicios y Protocolos -->
+        <section class="section services-section" id="servicios">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Nuestros Protocolos</span>
+                    <h2 class="section-title">Tratamientos en Gabinete</h2>
+                    <p class="section-description">Protocolos faciales y corporales enfocados en salud, revitalización y armonía.</p>
+                </div>
+
+                <!-- Tabs Filter -->
+                <div class="filter-tabs">
+                    <button class="tab-btn active" data-filter="all">Todos los Tratamientos</button>
+                    <button class="tab-btn" data-filter="facial">Faciales</button>
+                    <button class="tab-btn" data-filter="corporal">Corporales</button>
+                </div>
+
+                <!-- Services Grid -->
+                <div class="services-grid" id="services-grid">
+
+                    <!-- Facial 1: Bio-Regeneración Celular Avanzada -->
+                    <article class="service-card" data-category="facial">
+                        <div class="service-img-wrapper">
+                            <img src="assets/images/1.svg" alt="Bio-Regeneración Celular Avanzada" class="service-img">
+                        </div>
+                        <div class="service-badge">Facial Antiage</div>
+                        <h3 class="service-title">Bio-Regeneración Celular Avanzada</h3>
+                        <span class="service-subtitle">Exosomas + Dermapen + Aparatología</span>
+                        <div class="service-tech">Tecnología Celular Regenerativa</div>
+                        <p class="service-desc">
+                            Rejuvenecimiento celular intensivo de última generación. Introduce exosomas a través de microcanales para regenerar profundamente, activar la síntesis de colágeno y atenuar arrugas devolviendo firmeza y densidad.
+                        </p>
+                        <ul class="service-benefits">
+                            <li>Regeneración celular profunda</li>
+                            <li>Estimula colágeno y elastina</li>
+                            <li>Atenúa líneas de expresión finas</li>
+                        </ul>
+                        <div class="service-price-tag">$50.000 ARS</div>
+                        <a href="https://wa.me/qr/JULPQ2VESAFND1" 
+                           target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-block">
+                            Consultar por este Tratamiento
+                        </a>
+                    </article>
+
+                    <!-- Facial 2: Efecto Tensor -->
+                    <article class="service-card" data-category="facial">
+                        <div class="service-img-wrapper">
+                            <img src="assets/images/2.svg" alt="Efecto Tensor & Definición Oval" class="service-img">
+                        </div>
+                        <div class="service-badge">Facial Firmeza</div>
+                        <h3 class="service-title">Efecto Tensor & Definición Oval</h3>
+                        <span class="service-subtitle">Radiofrecuencia + Ultrasonido + EMS Facial</span>
+                        <div class="service-tech">Lifting No Invasivo Tri-Active</div>
+                        <p class="service-desc">
+                            Combate la pérdida de firmeza y redefine el contorno facial sin agujas ni cirugías. Compacta el colágeno, trabaja capas profundas y tonifica la musculatura del rostro para un efecto tensor visible.
+                        </p>
+                        <ul class="service-benefits">
+                            <li>Efecto tensor e inmediato</li>
+                            <li>Perfilado del óvalo mandibular</li>
+                            <li>Tonificación muscular facial</li>
+                        </ul>
+                        <div class="service-price-tag">$40.000 ARS</div>
+                        <a href="https://wa.me/qr/JULPQ2VESAFND1" 
+                           target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-block">
+                            Consultar por este Tratamiento
+                        </a>
+                    </article>
+
+                    <!-- Facial 3: Renovación Cutánea Customizada -->
+                    <article class="service-card" data-category="facial">
+                        <div class="service-img-wrapper">
+                            <img src="assets/images/19.svg" alt="Renovación Cutánea Customizada" class="service-img">
+                        </div>
+                        <div class="service-badge">Renovación Cutánea</div>
+                        <h3 class="service-title">Renovación Cutánea Customizada</h3>
+                        <span class="service-subtitle">Peeling Químico y/o Mecánico (Punta de Diamante)</span>
+                        <div class="service-tech">Exfoliación & Glow Personalizado</div>
+                        <p class="service-desc">
+                            Exfoliación controlada 100% personalizada según tu tipo de piel. Remueve células muertas, aclara el tono, alisa la textura áspera, minimiza poros dilatados y optimiza la absorción de nutrientes.
+                        </p>
+                        <ul class="service-benefits">
+                            <li>Luminosidad inmediata (Glow)</li>
+                            <li>Textura suave y poros refinados</li>
+                            <li>Tono homogéneo y revitalizado</li>
+                        </ul>
+                        <div class="service-price-tag">$35.000 ARS</div>
+                        <a href="https://wa.me/qr/JULPQ2VESAFND1" 
+                           target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-block">
+                            Consultar por este Tratamiento
+                        </a>
+                    </article>
+
+                    <!-- Facial 4: Protocolo Antimanchas Unify -->
+                    <article class="service-card" data-category="facial">
+                        <div class="service-img-wrapper">
+                            <img src="assets/images/22.svg" alt="Protocolo Antimanchas Unify" class="service-img">
+                        </div>
+                        <div class="service-badge">Despigmentante</div>
+                        <h3 class="service-title">Protocolo Antimanchas Unify</h3>
+                        <span class="service-subtitle">Láser / Luz Pulsada + Activos Despigmentantes</span>
+                        <div class="service-tech">Clarificante & Corrección Pigmentaria</div>
+                        <p class="service-desc">
+                            Tratamiento correctivo para aclarar manchas solares, melasma e hiperpigmentaciones. Fragmenta selectivamente la melanina e inhibe nuevas pigmentaciones para un rostro uniforme y radiante.
+                        </p>
+                        <ul class="service-benefits">
+                            <li>Aclara manchas y melasma</li>
+                            <li>Unifica el tono de la piel</li>
+                            <li>Previene nuevas pigmentaciones</li>
+                        </ul>
+                        <div class="service-price-tag">$40.000 ARS</div>
+                        <a href="https://wa.me/qr/JULPQ2VESAFND1" 
+                           target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-block">
+                            Consultar por este Tratamiento
+                        </a>
+                    </article>
+
+                    <!-- Facial 5: Limpieza Profunda -->
+                    <article class="service-card" data-category="facial">
+                        <div class="service-img-wrapper">
+                            <img src="assets/images/19.svg" alt="Limpieza Profunda & Shot de Hidratación" class="service-img">
+                        </div>
+                        <div class="service-badge">Higiene & Hidratación</div>
+                        <h3 class="service-title">Limpieza Profunda & Shot de Hidratación</h3>
+                        <span class="service-subtitle">Aparatología de Higiene + Extracciones + Shot Hidratante</span>
+                        <div class="service-tech">Detox & Pureza Facial Total</div>
+                        <p class="service-desc">
+                            Higiene dérmica completa para desobstruir poros, eliminar puntos negros y sebo. Finaliza con un shot intensivo de hidratación y activos calmantes que restauran la barrera cutánea.
+                        </p>
+                        <ul class="service-benefits">
+                            <li>Piel libre de impurezas y puntos negros</li>
+                            <li>Descongestión y frescura dérmica</li>
+                            <li>Hidratación profunda duradera</li>
+                        </ul>
+                        <div class="service-price-tag">$40.000 ARS</div>
+                        <a href="https://wa.me/qr/JULPQ2VESAFND1" 
+                           target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-block">
+                            Consultar por este Tratamiento
+                        </a>
+                    </article>
+
+                    <!-- Facial 6: Regeneración Post-Acné -->
+                    <article class="service-card" data-category="facial">
+                        <div class="service-img-wrapper">
+                            <img src="assets/images/20.svg" alt="Regeneración Dérmica Post-Acné" class="service-img">
+                        </div>
+                        <div class="service-badge">Acné & Cicatrices</div>
+                        <h3 class="service-title">Regeneración Dérmica Post-Acné</h3>
+                        <span class="service-subtitle">Activos Bactericidas + Inducción de Colágeno</span>
+                        <div class="service-tech">Terapia para Acné & Regeneración de Marcas</div>
+                        <p class="service-desc">
+                            Tratamiento de doble acción: regula la secreción sebácea y calma brotes activos, mientras que mediante estimulación dérmica suaviza cicatrices atróficas ("pocitos") y rojeces residuales.
+                        </p>
+                        <ul class="service-benefits">
+                            <li>Control del acné activo y sebo</li>
+                            <li>Suavizado de cicatrices y marcas</li>
+                            <li>Regeneración de tejido cutáneo</li>
+                        </ul>
+                        <div class="service-price-tag">$50.000 ARS</div>
+                        <a href="https://wa.me/qr/JULPQ2VESAFND1" 
+                           target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-block">
+                            Consultar por este Tratamiento
+                        </a>
+                    </article>
+
+                    <!-- Facial 7: Lifting Pestañas & Cejas -->
+                    <article class="service-card" data-category="facial">
+                        <div class="service-img-wrapper">
+                            <img src="assets/images/lash-brow.jpg" alt="Lifting de Pestañas & Diseño de Cejas" class="service-img service-img-photo">
+                        </div>
+                        <div class="service-badge">Mirada & Diseño Facial</div>
+                        <h3 class="service-title">Lifting de Pestañas & Diseño de Cejas</h3>
+                        <span class="service-subtitle">Lifting / Permanente + Laminado y Perfilado</span>
+                        <div class="service-tech">Curvatura, Volumen & Perfilado Natural</div>
+                        <p class="service-desc">
+                            Realzá tu mirada sin maquillaje diario. El lifting eleva y curva cada pestaña desde la raíz aportando longitud, mientras que el laminado y diseño de cejas define y enmarca tu rostro.
+                        </p>
+                        <ul class="service-benefits">
+                            <li>Pestañas arqueadas y largas sin rímel</li>
+                            <li>Cejas ordenadas y simétricas</li>
+                            <li>Resultado natural y duradero</li>
+                        </ul>
+                        <a href="https://wa.me/qr/JULPQ2VESAFND1" 
+                           target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-block">
+                            Consultar por este Tratamiento
+                        </a>
+                    </article>
+
+                    <!-- Corporal 1: Modelado Corporal Integral -->
+                    <article class="service-card" data-category="corporal">
+                        <div class="service-img-wrapper">
+                            <img src="assets/images/12.svg" alt="Modelado Corporal Integral" class="service-img">
+                        </div>
+                        <div class="service-badge">Corporal Reductor</div>
+                        <h3 class="service-title">Modelado Corporal Integral</h3>
+                        <span class="service-subtitle">Lipoláser + Ultracavitación + Radiofrecuencia</span>
+                        <div class="service-tech">Protocolo Lipo-Reductor Localizado</div>
+                        <p class="service-desc">
+                            Modelado no invasivo para adiposidad localizada rebelde (abdomen, flancos, pantalón de montar, espalda). Disuelve depósitos grasos y reafirma el tejido evitando la flacidez.
+                        </p>
+                        <ul class="service-benefits">
+                            <li>Reducción progresiva de centímetros</li>
+                            <li>Destrucción de depósitos grasos</li>
+                            <li>Prevención de flacidez corporal</li>
+                        </ul>
+                        <div class="service-price-tag">$40.000 ARS</div>
+                        <a href="https://wa.me/qr/JULPQ2VESAFND1" 
+                           target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-block">
+                            Consultar por este Tratamiento
+                        </a>
+                    </article>
+
+                    <!-- Corporal 2: Reafirmante Dérmico Corporal -->
+                    <article class="service-card" data-category="corporal">
+                        <div class="service-img-wrapper">
+                            <img src="assets/images/13.svg" alt="Reafirmante Dérmico Corporal" class="service-img">
+                        </div>
+                        <div class="service-badge">Corporal Reafirmante</div>
+                        <h3 class="service-title">Reafirmante Dérmico Corporal</h3>
+                        <span class="service-subtitle">Radiofrecuencia + Ultrasonido + Dermapen Corporal</span>
+                        <div class="service-tech">Protocolo Tensor & Colágeno Activo</div>
+                        <p class="service-desc">
+                            Tratamiento intensivo para combatir la laxitud cutánea en áreas críticas (abdomen post-parto, brazos, glúteos y entrepierna). Estimula masivamente la síntesis de colágeno.
+                        </p>
+                        <ul class="service-benefits">
+                            <li>Tonicidad y firmeza dérmica</li>
+                            <li>Restauración de elasticidad</li>
+                            <li>Ideal para abdomen, brazos y piernas</li>
+                        </ul>
+                        <div class="service-price-tag">$45.000 - $50.000 ARS <span class="price-zone-note">(según zona)</span></div>
+                        <a href="https://wa.me/qr/JULPQ2VESAFND1" 
+                           target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-block">
+                            Consultar por este Tratamiento
+                        </a>
+                    </article>
+
+                    <!-- Corporal 3: Exfoliación & Textura de Seda -->
+                    <article class="service-card" data-category="corporal">
+                        <div class="service-img-wrapper">
+                            <img src="assets/images/peeling-corporal.jpg" alt="Exfoliación & Textura de Seda" class="service-img service-img-photo">
+                        </div>
+                        <div class="service-badge">Renovación Corporal</div>
+                        <h3 class="service-title">Exfoliación & Textura de Seda</h3>
+                        <span class="service-subtitle">Peeling Químico + Exfoliación Mecánica + Hidratación</span>
+                        <div class="service-tech">Renovación & Exfoliación Corporal Profunda</div>
+                        <p class="service-desc">
+                            Renovación dérmica corporal completa. Elimina células muertas, suaviza asperezas en codos, rodillas o glúteos y mejora la queratosis pilaris, dejando un tacto aterciopelado.
+                        </p>
+                        <ul class="service-benefits">
+                            <li>Piel extra suave y sedosa</li>
+                            <li>Mejora de la queratosis pilaris</li>
+                            <li>Aclarado de zonas por fricción</li>
+                        </ul>
+                        <div class="service-price-tag">$35.000 ARS</div>
+                        <a href="https://wa.me/qr/JULPQ2VESAFND1" 
+                           target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-block">
+                            Consultar por este Tratamiento
+                        </a>
+                    </article>
+
+                    <!-- NEW Corporal 4: Tonificación Muscular EMS -->
+                    <article class="service-card" data-category="corporal">
+                        <div class="service-img-wrapper">
+                            <img src="assets/images/28.svg" alt="Tonificación Muscular EMS" class="service-img">
+                        </div>
+                        <div class="service-badge">Corporal Tonificación</div>
+                        <h3 class="service-title">Tonificación Muscular EMS</h3>
+                        <span class="service-subtitle">Electroestimulación Muscular de Alta Intensidad</span>
+                        <div class="service-tech">Firmeza & Definición Muscular Profunda</div>
+                        <p class="service-desc">
+                            Tratamiento avanzado de electroestimulación (EMS) que genera contracciones musculares profundas e intensas. Fortalece las fibras musculares, tonifica glúteos, abdomen y piernas, combate la flacidez y perfila el contorno corporal.
+                        </p>
+                        <ul class="service-benefits">
+                            <li>Tonificación y firmeza muscular intensa</li>
+                            <li>Modelado de glúteos, abdomen y piernas</li>
+                            <li>Mejora la circulación y la firmeza cutánea</li>
+                        </ul>
+                        <div class="service-price-tag">$40.000 ARS</div>
+                        <a href="https://wa.me/qr/JULPQ2VESAFND1" 
+                           target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary btn-block">
+                            Consultar por este Tratamiento
+                        </a>
+                    </article>
+
+                </div>
+
+                <!-- Payment Methods Banner -->
+                <div class="payment-methods-banner mt-5">
+                    <div class="payment-icon">💳</div>
+                    <div class="payment-text">
+                        <strong>Medios de Pago:</strong> Recibimos todos los medios de pago: efectivo, transferencia, débito y tarjetas de crédito.
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <a href="https://wa.me/qr/JULPQ2VESAFND1" 
+                       target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                        Consultar Disponibilidad de Turnos
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Catálogo de Productos y Marcas Profesionales -->
+        <section class="section products-section" id="productos">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Rutina en Casa & Marcas</span>
+                    <h2 class="section-title">Llevá el cuidado profesional a tu rutina diaria</h2>
+                    <p class="section-description">
+                        Trabajamos exclusivamente con laboratorios nacionales de uso profesional y fórmulas cosmecéuticas seleccionadas para prolongar y potenciar los resultados del gabinete.
+                    </p>
+                </div>
+
+                <!-- Marcas Profesionales Carousel / Showcase -->
+                <div class="brands-card">
+                    <h3 class="brands-title">Laboratorios Profesionales Nacionales</h3>
+                    <p class="brands-sub">Productos formulados con alta concentración de activos y respaldo dermatológico</p>
+                    <div class="brands-grid">
+                        <div class="brand-item">
+                            <span class="brand-name">ICONO</span>
+                            <span class="brand-type">Cosmecéutica</span>
+                        </div>
+                        <div class="brand-item">
+                            <span class="brand-name">CARTHAGE</span>
+                            <span class="brand-type">Biotecnología Cutánea</span>
+                        </div>
+                        <div class="brand-item">
+                            <span class="brand-name">NIZA</span>
+                            <span class="brand-type">Cuidado Científico</span>
+                        </div>
+                        <div class="brand-item">
+                            <span class="brand-name">PRODERMIC</span>
+                            <span class="brand-type">Soluciones Específicas</span>
+                        </div>
+                        <div class="brand-item">
+                            <span class="brand-name">DHM</span>
+                            <span class="brand-type">Dermatología Estética</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de Asesoramiento de Rutina Personalizada -->
+                <div class="custom-routine-banner">
+                    <div class="routine-content">
+                        <span class="routine-tag">🌿 Asesoramiento Cosmiátrico Sin Cargo</span>
+                        <h3 class="routine-title">¿No sabés qué productos necesita tu piel?</h3>
+                        <p class="routine-desc">
+                            Te asesoramos de forma personalizada para armar tu rutina básica o avanzada de cuidado facial en domicilio, seleccionando los productos ideales de nuestros laboratorios según tu biotipo cutáneo.
+                        </p>
+                    </div>
+                    <div class="routine-action">
+                        <a href="https://wa.me/qr/JULPQ2VESAFND1" 
+                           target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-glow">
+                            <svg class="icon" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.84 9.84 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.19 8.19 0 0 1-5.83 2.42c-1.46 0-2.9-.38-4.16-1.12l-.3-.18-3.1 1.2.82-3.02-.19-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.45c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.65.81-.8.98-.15.17-.3.19-.55.07-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.49-1.4-1.74-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.3z"/>
+                            </svg>
+                            <span>Armar mi Rutina por WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Products Grid -->
+                <div class="products-grid mt-5">
+                    
+                    <div class="product-card">
+                        <div class="product-category">Limpieza & Tonificación</div>
+                        <h4 class="product-name">Geles & Espumas Limpiadoras Suaves</h4>
+                        <p class="product-desc">Fórmulas respetuosas con el manto hidrolipídico que desobstruyen poros y preparan la piel día y noche.</p>
+                        <span class="product-tag">Apto todas las pieles</span>
+                        <a href="https://wa.me/qr/JULPQ2VESAFND1" 
+                           target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">Consultar Producto</a>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-category">Sérums & Activos Concentrados</div>
+                        <h4 class="product-name">Fórmulas Específicas de Alta Potencia</h4>
+                        <p class="product-desc">Sérums concentrados de Ácido Hialurónico, Niacinamida, Vitamina C y complejos regeneradores.</p>
+                        <span class="product-tag">Tratamiento focalizado</span>
+                        <a href="https://wa.me/qr/JULPQ2VESAFND1" 
+                           target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">Consultar Producto</a>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-category">Hidratación & Protección</div>
+                        <h4 class="product-name">Cremas Barrera & Fotoprotección</h4>
+                        <p class="product-desc">Crema selladora de hidratación y protectores solares de amplio espectro indispensables para prevenir el fotoenvejecimiento.</p>
+                        <span class="product-tag">Protección diaria</span>
+                        <a href="https://wa.me/qr/JULPQ2VESAFND1" 
+                           target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">Consultar Producto</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Destacada de Contacto & Turnos (Alta Visibilidad) -->
+        <section class="section contact-section" id="contacto">
+            <div class="container">
+                <div class="contact-box">
+                    <div class="contact-header text-center">
+                        <span class="contact-badge">✨ Atención Exclusiva</span>
+                        <h2 class="contact-title">¿Lista para empezar a cuidar tu piel?</h2>
+                        <p class="contact-subtitle">
+                            Coordinar tu cita es simple y rápido. Hacé clic abajo para hablar directamente por WhatsApp y reservar tu horario o resolver cualquier duda sobre tu tratamiento.
+                        </p>
+
+                        <!-- Main Giant WhatsApp Button -->
+                        <div class="contact-hero-cta">
+                            <a href="https://wa.me/qr/JULPQ2VESAFND1" 
+                               target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-giant">
+                                <svg class="icon-lg" viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                                    <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.84 9.84 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.19 8.19 0 0 1-5.83 2.42c-1.46 0-2.9-.38-4.16-1.12l-.3-.18-3.1 1.2.82-3.02-.19-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.45c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.65.81-.8.98-.15.17-.3.19-.55.07-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.49-1.4-1.74-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.3z"/>
+                                </svg>
+                                <span>💬 Coordinar mi turno por WhatsApp</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-grid">
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div class="info-content">
+                                <h4>Ubicación</h4>
+                                <p>Sargento Cabral 2731 Planta Baja 2</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">⏰</div>
+                            <div class="info-content">
+                                <h4>Horarios de atención</h4>
+                                <p>De 14:00 a 20:00 hs (consultar disponibilidad por la mañana)</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">📅</div>
+                            <div class="info-content">
+                                <h4>Modalidad de reserva</h4>
+                                <p>Atención personalizada con turno previo programado.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Interactive Inquiry Form -->
+                    <div class="contact-form-wrapper mt-5">
+                        <h4 class="form-title text-center">O enviános tu consulta directa</h4>
+                        <form id="whatsapp-quick-form" class="quick-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Nombre completo</label>
+                                    <input type="text" id="form-name" placeholder="Ej: María González" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-interest">Interés principal</label>
+                                    <select id="form-interest" required>
+                                        <option value="Tratamiento Facial">Tratamiento Facial</option>
+                                        <option value="Tratamiento Corporal">Tratamiento Corporal</option>
+                                        <option value="Lifting de Pestañas / Cejas">Mirada (Pestañas / Cejas)</option>
+                                        <option value="Rutina de Skincare / Productos">Rutina de Skincare / Productos</option>
+                                        <option value="Consulta general">Otro / Consulta General</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Mensaje o consulta</label>
+                                <textarea id="form-message" rows="3" placeholder="Escribinos tus dudas o qué tratamiento te gustaría realizarte..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                Enviar mensaje por WhatsApp
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <img src="assets/images/logo.jpg" alt="Baking Beauty" class="footer-logo">
+                <span class="footer-name">Baking Beauty</span>
+                <p class="footer-sub">Estética Facial y Corporal</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <a href="#hero">Inicio</a>
+                <a href="#filosofia">Filosofía</a>
+                <a href="#servicios">Tratamientos</a>
+                <a href="#productos">Productos</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+
+            <div class="footer-contact">
+                <h4>Contacto Directo</h4>
+                <p>💬 WhatsApp para consultas y turnos</p>
+                <p>📍 Sargento Cabral 2731 Planta Baja 2</p>
+                <p>⏰ De 14:00 a 20:00 hs (consultar mañana)</p>
+                <p>✨ Atención exclusiva con turno previo</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>&copy; 2026 Baking Beauty - Estética Facial y Corporal. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Widget Button -->
+    <a href="https://wa.me/qr/JULPQ2VESAFND1" 
+       target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Hablar por WhatsApp">
+        <span class="whatsapp-float-badge">1</span>
+        <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+            <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.84 9.84 0 0 0 12.04 2zm.01 1.67c4.54 0 8.24 3.7 8.24 8.24 0 2.2-.86 4.27-2.42 5.82a8.19 8.19 0 0 1-5.83 2.42c-1.46 0-2.9-.38-4.16-1.12l-.3-.18-3.1 1.2.82-3.02-.19-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm4.52 11.45c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.65.81-.8.98-.15.17-.3.19-.55.07-.25-.13-1.06-.39-2.02-1.25-.75-.67-1.26-1.49-1.4-1.74-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.3z"/>
+        </svg>
+    </a>
+
+    <script src="main.js"></script>
+</body>
+</html>
