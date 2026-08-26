@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 2. Services Filtering System (Tabs)
+    // 2. Services Filtering System (Tabs with Multi-category Support)
     const tabBtns = document.querySelectorAll('.tab-btn');
     const serviceCards = document.querySelectorAll('.service-card');
 
@@ -37,9 +37,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const filterValue = btn.getAttribute('data-filter');
 
             serviceCards.forEach(card => {
-                const category = card.getAttribute('data-category');
+                const category = card.getAttribute('data-category') || '';
 
-                if (filterValue === 'all' || category === filterValue) {
+                if (filterValue === 'all' || category.includes(filterValue)) {
                     card.style.display = 'flex';
                     setTimeout(() => {
                         card.style.opacity = '1';
@@ -71,8 +71,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
             }
 
-            // Direct WhatsApp QR link provided by user
-            const whatsappUrl = `https://wa.me/qr/JULPQ2VESAFND1`;
+            // Check if interest is related to lashes/brows to direct to dedicated link
+            let whatsappUrl = `https://wa.me/qr/JULPQ2VESAFND1`;
+            if (interest.includes('Pestañas') || interest.includes('Cejas')) {
+                whatsappUrl = `https://wa.me/message/T3XJ4SQKZAMJH1`;
+            }
+
             window.open(whatsappUrl, '_blank');
         });
     }
