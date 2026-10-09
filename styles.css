@@ -1,6 +1,6 @@
 /* ==========================================================================
    Baking Beauty - Estética Facial y Corporal
-   Design System & Styling (Fully Mobile Responsive)
+   Design System & Styling (Fully Mobile Responsive & Accessible)
    Colors extracted from logo:
    - Yellow/Chartreuse Accent: #D8E35A / #C5D539
    - Deep Teal / Petrol: #2F5261 / #1F3742
@@ -238,7 +238,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(250, 251, 246, 0.94);
+    background-color: rgba(250, 251, 246, 0.96);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border-color);
@@ -249,7 +249,13 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 80px;
+    min-height: 76px;
+}
+
+.header-top-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .brand-logo {
@@ -288,76 +294,32 @@ h1, h2, h3, h4, h5, h6 {
 .main-nav {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1.2rem;
+}
+
+.mobile-scroll-hint {
+    display: none;
 }
 
 .nav-link {
-    font-size: 0.95rem;
-    font-weight: 500;
+    font-size: 0.92rem;
+    font-weight: 600;
     color: var(--text-body);
     position: relative;
-    padding: 0.4rem 0;
-}
-
-.nav-link::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--primary-dark);
+    padding: 0.4rem 0.6rem;
+    border-radius: var(--radius-full);
     transition: var(--transition);
 }
 
 .nav-link:hover, .nav-link.active {
-    color: var(--secondary);
-    font-weight: 600;
-}
-
-.nav-link:hover::after, .nav-link.active::after {
-    width: 100%;
+    color: var(--secondary-dark);
+    background-color: rgba(216, 227, 90, 0.35);
 }
 
 .header-actions {
     display: flex;
     align-items: center;
     gap: 1rem;
-}
-
-.mobile-menu-toggle {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
-    width: 44px;
-    height: 44px;
-    border-radius: var(--radius-sm);
-}
-
-.mobile-menu-toggle span {
-    width: 24px;
-    height: 2px;
-    background-color: var(--secondary);
-    transition: var(--transition);
-    border-radius: 2px;
-}
-
-.mobile-menu-toggle.active span:nth-child(1) {
-    transform: translateY(7px) rotate(45deg);
-}
-
-.mobile-menu-toggle.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.mobile-menu-toggle.active span:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
 }
 
 /* Sections General */
@@ -396,7 +358,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero Section */
 .hero-section {
     position: relative;
-    padding-top: 130px;
+    padding-top: 120px;
     padding-bottom: 5rem;
     overflow: hidden;
     background: linear-gradient(180deg, #F4F6EA 0%, var(--bg-page) 100%);
@@ -812,10 +774,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--secondary);
 }
 
-/* ==========================================================================
-   CURSOS & CAPACITACIONES ONLINE SECTION (MAIN PAGE & STANDALONE LANDINGS)
-   ========================================================================== */
-
+/* Cursos Section */
 .courses-section {
     background: linear-gradient(180deg, #FAFBF6 0%, #F1F4E6 100%);
     padding: 5rem 0;
@@ -1456,7 +1415,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   MOBILE & TABLET RESPONSIVE BREAKPOINTS
+   MOBILE & TABLET RESPONSIVE BREAKPOINTS (ACCESSIBLE HORIZONTAL NAV)
    ========================================================================== */
 
 @media (max-width: 992px) {
@@ -1494,54 +1453,128 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
     .container {
-        padding: 0 1.2rem;
+        padding: 0 1rem;
+    }
+
+    .site-header {
+        padding: 0.4rem 0 0.3rem;
     }
 
     .header-container {
-        height: 70px;
-    }
-
-    .main-nav {
-        position: fixed;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background-color: rgba(250, 251, 246, 0.98);
-        backdrop-filter: blur(16px);
-        -webkit-backdrop-filter: blur(16px);
+        display: flex;
         flex-direction: column;
-        padding: 2rem 1.5rem;
-        gap: 1.4rem;
-        box-shadow: var(--shadow-lg);
-        transform: translateY(-150%);
-        opacity: 0;
-        pointer-events: none;
-        transition: var(--transition);
-        border-bottom: 1px solid var(--border-color);
-    }
-    
-    .main-nav.active {
-        transform: translateY(0);
-        opacity: 1;
-        pointer-events: all;
+        align-items: stretch;
+        min-height: auto;
+        gap: 0.4rem;
     }
 
-    .nav-link {
-        font-size: 1.1rem;
+    .header-top-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         width: 100%;
-        text-align: center;
-    }
-
-    .header-actions .btn-whatsapp {
-        display: none;
     }
 
     .mobile-menu-toggle {
+        display: none !important;
+    }
+
+    .header-actions {
         display: flex;
+        align-items: center;
+    }
+
+    .header-actions .btn-whatsapp {
+        padding: 0.4rem 0.95rem;
+        font-size: 0.82rem;
+        min-height: 38px;
+    }
+
+    .brand-name {
+        font-size: 1.15rem;
+    }
+
+    .brand-tagline {
+        font-size: 0.7rem;
+    }
+
+    .logo-img {
+        width: 38px;
+        height: 38px;
+    }
+
+    /* DIRECT HORIZONTAL MOBILE NAVIGATION (NO HAMBURGER MENU) */
+    .main-nav {
+        position: static;
+        transform: none;
+        opacity: 1;
+        pointer-events: all;
+        box-shadow: none;
+        border: none;
+        padding: 0.2rem 0 0.1rem;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0.5rem;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        width: 100%;
+    }
+
+    .main-nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* ANIMATED SWIPE HINT BADGE PLACED BELOW THE NAVIGATION LINE */
+    .mobile-scroll-hint {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.35rem;
+        font-size: 0.72rem;
+        font-weight: 800;
+        color: var(--secondary-dark);
+        background-color: var(--primary);
+        padding: 0.25rem 0.85rem;
+        border-radius: var(--radius-full);
+        margin: 0.1rem auto 0;
+        width: fit-content;
+        box-shadow: 0 2px 8px rgba(216, 227, 90, 0.5);
+        animation: pulse-swipe-hint 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse-swipe-hint {
+        0%, 100% { transform: translateX(0); }
+        50% { transform: translateX(4px); }
+    }
+
+    .nav-link {
+        font-size: 0.88rem;
+        font-weight: 700;
+        color: var(--secondary-dark);
+        background-color: rgba(78, 99, 39, 0.12);
+        border: 1px solid rgba(47, 82, 97, 0.2);
+        padding: 0.45rem 0.95rem;
+        border-radius: var(--radius-full);
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        flex-shrink: 0;
+        text-align: center;
+        box-shadow: 0 2px 6px rgba(47, 82, 97, 0.05);
+    }
+
+    .nav-link.active, .nav-link:hover {
+        background-color: var(--secondary-dark);
+        color: var(--primary);
+        border-color: var(--secondary-dark);
+        box-shadow: 0 4px 12px rgba(31, 55, 66, 0.3);
     }
 
     .hero-section {
-        padding-top: 100px;
+        padding-top: 135px;
         padding-bottom: 3.5rem;
     }
 
@@ -1659,16 +1692,16 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 400px) {
     .brand-name {
-        font-size: 1.1rem;
+        font-size: 1.05rem;
     }
     
     .brand-tagline {
-        font-size: 0.7rem;
+        font-size: 0.68rem;
     }
     
     .logo-img {
-        width: 40px;
-        height: 40px;
+        width: 36px;
+        height: 36px;
     }
 
     .brand-item {
