@@ -56,6 +56,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Support top nav links with data-filter-target on the standalone treatments page
+    document.querySelectorAll('[data-filter-target]').forEach(navLink => {
+        navLink.addEventListener('click', () => {
+            const targetFilter = navLink.getAttribute('data-filter-target');
+            const matchingTab = document.querySelector(`.tab-btn[data-filter="${targetFilter}"]`);
+            if (matchingTab) {
+                matchingTab.click();
+            }
+        });
+    });
+
     // 3. WhatsApp Quick Inquiry Form Handler
     const quickForm = document.getElementById('whatsapp-quick-form');
     if (quickForm) {
